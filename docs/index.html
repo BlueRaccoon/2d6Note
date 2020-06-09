@@ -217,7 +217,7 @@ Error message and password prompt
 
 <li>DiveRoll</li>
 
-<li>Draft of 'Scout'</li>
+<li>Hunt</li>
 
 <li>Leap</li>
 
@@ -9693,8 +9693,8 @@ Error message and password prompt
 <div created="20200609053905581" modified="20200609054557859" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
-<div created="20200609054758695" modified="20200609061917050" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200609054758695" modified="20200609064349351" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20200609061925590" modified="20200609062011668" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -9702,7 +9702,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200609055505322" list="$:/ControlPanel DiveRoll Leap Nimble Sprint [[Draft of 'Scout']]" modified="20200609064325767" title="$:/StoryList">
+<div created="20200609055505322" list="Hunt DiveRoll Leap Nimble Sprint Scout" modified="20200609064325767" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200609062022165" list="$:/core/ui/Buttons/fold $:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold-bar" modified="20200609062028555" title="$:/tags/ViewToolbar">
@@ -9895,12 +9895,10 @@ Error message and password prompt
 <div act="↻" brief="When attacked, move 1m and Take Cover." created="20200609063823790" modified="20200609064309929" tags="Technique Scout" title="DiveRoll">
 <pre>{{!!brief}}</pre>
 </div>
-<div brief="Ignore Difficult Terrain. Take ½ damage from Falls and Collision" created="20200609060741089" draft.of="Scout" draft.title="Scout" modified="20200609064318936" tags="Trait StartingTrait" title="Draft of 'Scout'">
-<pre>{{!!brief}}
+<div act="◆" brief="Search using Perception/Security/Survival +Advantage. For 1 round, you can ↻React to Ambushes" created="20200609064632415" modified="20200609065047579" tags="Technique Scout" title="Hunt">
+<pre>Search with Advantage. You may use Security or Survival instead of Perception.
 
-
-&lt;$list filter=&quot;[tag[Scout]]&quot;&gt;{{||tmp.technique}}&lt;br&gt;&lt;/$list&gt;
-</pre>
+Until your next turn, you can use Reactions against Ambush attacks.</pre>
 </div>
 <div act="◇" brief="Take a great leap; move up to Speed horizontally and 2m vertically. Resist 3 dmg from Falls/Hazards." created="20200609063352868" modified="20200609063740982" tags="Technique Scout" title="Leap">
 <pre>{{!!brief}}</pre>
@@ -9908,14 +9906,12 @@ Error message and password prompt
 <div act="◇" brief="You may move up to 2m and Hide, Escape, or Take Cover." created="20200609062709176" modified="20200609062948063" tags="Technique Scout" title="Nimble">
 <pre>{{!!brief}}</pre>
 </div>
-<div brief="Ignore Difficult Terrain. Take ½ damage from Falls and Collision" created="20200609060741089" modified="20200609062640567" tags="Trait StartingTrait" title="Scout">
+<div brief="Ignore Difficult Terrain. Take ½ damage from Falls and Collision" created="20200609060741089" modified="20200609064428523" tags="Trait StartingTrait" title="Scout">
 <pre>{{!!brief}}
 
 
-&lt;$list filter=&quot;[tag[Scout]]&quot;&gt;{{||tmp.technique}}&lt;/$list&gt;
-
-[↻] ''Dive Roll''
-Move 2m and Take Cover</pre>
+&lt;$list filter=&quot;[tag[Scout]sort[act]]&quot;&gt;{{||tmp.technique}}&lt;br&gt;&lt;/$list&gt;
+</pre>
 </div>
 <div act="◇" brief="Move up to [Speed+2]m in a straight line" created="20200609061154435" modified="20200609063056800" tags="Technique Scout" title="Sprint">
 <pre>{{!!brief}}</pre>
